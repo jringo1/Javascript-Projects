@@ -511,6 +511,7 @@ function checkWinCon8(info,squareArray) {
 function square1Animate() {
 	var activePlayer = document.getElementById('showPlayer').innerHTML;
 	if (activePlayer != "Game Stopped") { 
+		var square = "0";
 		var verdict = recordMoves(square);
 		if (verdict == undefined) { 
 			var paintAvatar = determineAvatar();  

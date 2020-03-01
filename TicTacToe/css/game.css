@@ -7,7 +7,7 @@ body {
     margin: 0 auto;
 }
 
-#gameMsgbox {
+#gameMsgBox {
     cursor: pointer;
     display: none;
     width: 500px;
@@ -22,20 +22,20 @@ body {
     box-shadow: 5px 5px 25px -4px rgba(0,0,0,0.55);
 }
 
-#gameMsgbox #gameMsg {
+#gameMsgBox #gameMsg {
     cursor: pointer;
     margin: 4% auto;
     text-align: center;
     color: darkblue;
     font-weight: bold;
-    font-family:;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 45px;
 }
 
 table {
     width: 620px;
     margin: 0 auto;
-    box-shadow: 5px 4px 15px -2px rgba(0,0,0,0.45);
+    box-shadow: 5px 4px 15px -2px rgba(0,0,0,.45);
     border-radius: 10px;
     float: left;
     background-color: #e5e6e8;
@@ -48,7 +48,7 @@ td {
     overflow: hidden;
     cursor: pointer;
     border-width: 4px;
-    border-style:groove;
+    border-style: groove;
     border-color: #e5e6e8;
 }
 
@@ -85,7 +85,6 @@ table tr:nth-child(3) td:nth-child(1) {
 .O {
     transition: transform .3s;
     opacity: 1;
-    position: absolute;
     background-image: url("../images/avatarO.png");
     width: 200px;
     height: 200px;
@@ -95,11 +94,10 @@ table tr:nth-child(3) td:nth-child(1) {
 .X {
     transition: transform .3s;
     opacity: 1;
-    position: absolute;
     background-image: url("../images/avatarX.png");
     width: 200px;
     height: 200px;
-    transform: translate(100%);
+    transform: translateY(100%);
 }
 
 .console_Left {
@@ -117,15 +115,14 @@ table tr:nth-child(3) td:nth-child(1) {
 }
 
 .displayBox {
-    background-color: rgba(53,35, 142, .95);
+    background-color: rgba(53, 35, 142, .95);
     color: white;
     font-weight: bold;
     border: 3px solid black;
     padding: 2%;
-    box-shadow: 5px 5px 25px -4px;
+    box-shadow: 5px 5px 25px -4px rgba(0,0,0,0.65);
     border-radius: 10px;
 }
-
 .displayBox:hover {
     background-color: rgba(53, 35, 142, .88);
 }
@@ -156,9 +153,9 @@ table tr:nth-child(3) td:nth-child(1) {
 
 .boxRight>button:hover {
     background-color: rgba(237, 234, 234, .95);
-    border: 1px solid rgba(0,0,0,0.85);
+    border: 1px solid rgba(0,0,0,.85);
+    box-shadow: 3px 3px 15px -4px rgba(0,0,0,.65);
     border-radius: 10px;
-    box-shadow: 3px 3px 15px -4px rgba(0,0,0,0.65);
 }
 
 #controls {
@@ -178,18 +175,18 @@ table tr:nth-child(3) td:nth-child(1) {
     margin: 0px 0px 0px 0px;
     background-color: #212270;
     border: 2px solid black;
-    border-radius: 10px 10px 0px 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 #showPlayer {
     font-variant: small-caps;
     color: red;
+    font-weight: bold;
     width: 120px;
     height: 20px;
-    font-weight: bold;
     text-align: center;
-    padding: 2px 0px 2px 0px;
     margin: 0px 0px 0px 0px;
+    padding: 5px 0px 5px 0px;
     border: 2px solid black;
     border-radius: 0px 0px 10px 10px;
 }
@@ -199,7 +196,7 @@ table tr:nth-child(3) td:nth-child(1) {
     height: 82px;
     text-align: center;
     margin: 358px 0px 0px 20px;
-    box-shadow: 5px 5px 25px -4px;
+    box-shadow: 5px 5px 25px -4px rgba(0,0,0,0.65);
     border-radius: 10px;
 }
 
@@ -216,19 +213,19 @@ table tr:nth-child(3) td:nth-child(1) {
     font-size: 1em;
     font-weight: bold;
     color: #fff;
-    text-shadow: inset 3px 3px 15px -2px rgba(0,0,0,0.65);
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     border: 2px solid rgb(0, 153, 0);
     background-color: rgb(57, 230, 0);
     margin: 20px 0px 0px 25px;
-    box-shadow: inset 3px 3px 15px -2px rgba(255,255,255,0.95), 3px 3px 15px -4px rgba(0,0,0,0.85);
     padding: 12px 14px 12px 14px;
-    border-radius: 10px; 
+    box-shadow: inset 3px 3px 15px -2px rgba(255, 255, 255, 0.95), 3px 3px 15px -4px rgba(0,0,0,.85);
+    border-radius: 10px;
 }
 
 #btnStart:hover {
     border: 2px solid rgb(19, 77, 0);
     background-color: rgb(0, 204, 0);
-    box-shadow: inset 3px 3px 15px -2px rgba (0,0,0,0.65);
+    box-shadow: inset 3px 3px 15px -2px rgba(0,0,0,0.65);
     transition-property: background box-shadow;
     transition: 0.2s;
     transition-timing-function: ease-in-out;
@@ -240,20 +237,21 @@ table tr:nth-child(3) td:nth-child(1) {
     font-size: 1em;
     font-weight: bold;
     color: #fff;
-    text-shadow: inset 3px 3px 15px -2px rgba(0,0,0,0.65);
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     border: 2px solid rgb(204, 0, 0);
-    background-color: rgb(255, 51, 51);
+    background-color: rgb(255, 52, 52);
     margin: 20px 0px 0px 10px;
-    box-shadow: inset 3px 3px 15px -2px rgba(255,255,255,0.95), 3px 3px 15px -4px rgba(0,0,0,0.85);
     padding: 12px 14px 12px 14px;
-    border-radius: 10px; 
+    box-shadow: inset 3px 3px 15px -2px rgba(255, 255, 255, 0.95), 3px 3px 15px -4px rgba(0,0,0,.85);
+    border-radius: 10px;
 }
 
 #btnStop:hover {
     border: 2px solid rgb(19, 77, 0);
-    background-color: rgb(255,0,0);
-    box-shadow: inset 3px 3px 15px -2px rgba(0,0,0,0.65);
+    background-color: rgb(255, 0, 0);
+    box-shadow: inset 3px 3px 15px -2px rgba(0, 0, 0, 0.65);
     transition-property: background box-shadow;
-    transition:0.2s;
+    transition: 0.2s;
     transition-timing-function: ease-in-out;
 }
+
