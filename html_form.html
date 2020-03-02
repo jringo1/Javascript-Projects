@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Forms with JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="CSS/form.css">
+</head>
+
+<body>
+    <h1>SLOW</h1>
+<button class="open-button" onclick="openForm()">OpenForm</button>
+<div class="form-popup" id="form">
+    <form name= "form1" class= "form-container" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <button type="submit" class="btn" value="Sumbit">Submit</button>
+        <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+</div>
+
+<img class="img1" src="images/avatarX.png">
+<script src="JS/form.js"></script>
+</body>
+</html>
