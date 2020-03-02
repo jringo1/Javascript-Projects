@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="./JS/JavaScript_3.js"></script>
+    <link type="sylesheet" href="CSS/fade.css">
     
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>Football Players</h1>
+    <script>document.body.className += ' fade-out';</script>
+    <script>
+    $(function() {
+        $('body').removeClass('fade-out');
+    });
+    </script>
+    <h1 style="font-size:2vw;">Football Players</h1>
     <h3>Click on a player to see his position</h3>
     <div>
         <ul>
@@ -17,6 +27,7 @@
         </ul>
     </div>
 
+<script src="./JS/JavaScript_3.js"></script>
 
 </body>
 </html>

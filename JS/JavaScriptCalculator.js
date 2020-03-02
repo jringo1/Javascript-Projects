@@ -63,7 +63,7 @@ function Calculator_Reset() {
 
 function Update_Display() {
     const display = document.querySelector('.calculator-screen');
-    display.value = Calculator.Display_Valuel;
+    display.value = Calculator.Display_Value;
 }
 
 Update_Display();
